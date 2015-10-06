@@ -3,10 +3,10 @@
 # 各サーバに対して、ssh接続してコマンドを実行する
 #
 
-. ../conf/myfunctions
+. ${HOME}/conf/myfunctions
 
-SED=/usr/bin/sed
-SSH=/usr/bin/ssh
+SED=`which sed`
+SSH=`which ssh`
 
 print_usage () {
     cat <<EOF >&2
