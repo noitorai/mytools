@@ -19,6 +19,8 @@ BEGIN {
                 } else if (i==5) {
                         gsub(/-/,"",$i)
                         printf("%s", $i)
+                } else if (12 <= i && i <= 18) {
+                        printf("%s", 0)
                 } else {
                         printf("%s", $i)
                 } 
